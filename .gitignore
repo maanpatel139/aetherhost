@@ -1,0 +1,17 @@
+# Python / FastAPI
+__pycache__/
+*.pyc
+.env
+
+# Docker
+pgdata/
+minio_data/
+*.log
+
+# Node/Frontend
+node_modules/
+.next/
+.env.local
+
+# VSCode
+.vscode/

@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+psycopg2-binary
+python-dotenv
+requests
+minio
+supabase
+passlib[argon2]
+python-jose[cryptography]
+email-validator
+docker
