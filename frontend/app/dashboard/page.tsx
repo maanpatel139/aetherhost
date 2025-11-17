@@ -7,13 +7,13 @@ import "xterm/css/xterm.css";
 import dynamic from "next/dynamic";
 
 const XTermDynamic = dynamic(
-  async () => {
-    const { Terminal } = await import("xterm");
-    const { FitAddon } = await import("xterm-addon-fit");
-    return { Terminal, FitAddon };
-  },
-  { ssr: false }
+  () => import("@/components/XTermWrapper"), 
+  {
+    ssr: false,
+    loading: () => <p className="text-gray-300">Loading terminal…</p>,
+  }
 );
+
 
 type User = {
   id: number;
