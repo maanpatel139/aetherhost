@@ -157,7 +157,7 @@ export default function Dashboard() {
         term.current.writeln(`Connected to container: ${selectedContainer}`);
         term.current.write("$ ");
 
-        term.current.onData(async (data) => {
+        term.current.onData(async (data: string) => {
           const token = localStorage.getItem("token");
           if (!selectedContainer || !token) return;
 
